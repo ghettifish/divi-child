@@ -1,0 +1,57 @@
+//Navigation
+#top-menu-nav {
+    a {
+        @include primary-nav;
+    }
+    li.current-menu-item > a {
+        @include primary-nav-current;
+    }
+    ul.sub-menu {
+        @include sub-nav;
+    }
+    
+}
+
+.et_header_style_left #et-top-navigation {
+    @media #{$uptolaptop}{
+        padding-top: 25px;
+    }
+    padding-top: 100px;
+}
+#et_search_icon:hover {
+    color: $tertiary-color $i;
+}
+
+.et-fixed-header {
+    .header__logo {
+        opacity: 0;
+    }
+    .header__info {
+        opacity: 0;
+    }
+}
+
+.container {
+    width: 90%;
+}
+/*Center Column Content*/
+.ds-vertical-align { 
+    display: flex !important; 
+    flex-direction: column !important; 
+    justify-content: center !important;
+}
+
+/*Help tabs fit more onto a page*/
+.et_pb_tabs_controls li a{
+	padding: 4px 15px 4px !important;
+	font: 500 1.2rem/1.5 "freight-sans-pro", sans-serif;
+}
+
+.one_third {
+	margin-right: 2%;
+} 
+/* Displays Photos in mobile Slideshows*/
+@media #{$uptotablet}{
+    .et_pb_slide_description { padding: 2rem 0 0 0 $i;}
+    .et_pb_slide_image, .et_pb_slide_video {display: block !important;}
+}

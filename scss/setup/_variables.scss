@@ -1,0 +1,51 @@
+//Fonts
+$primary-font: "Patua One", Arial, Tahoma, sans-serif;
+$secondary-font: "Roboto Condensed", Arial, Tahoma, sans-serif;
+
+//Colors
+$primary-color: rgb(90, 33, 18);
+$secondary-color: rgb(249,161,27);
+$tertiary-color: lighten($primary-color,15%);
+
+//Nav Items
+@mixin primary-nav {
+    font-family: $primary-font;
+    font-weight: 100;
+    font-size: 16px;
+    color: $secondary-color;
+    &:hover{
+        color: $tertiary-color;
+        opacity: 1 $i;
+    }
+}
+@mixin primary-nav-current {
+    color: $tertiary-color;
+}
+@mixin sub-nav {
+    padding: 0;
+    border-top: 0;
+    max-width: 200px;
+    li {
+        padding: 0;
+    }
+    a {
+        color: $tertiary-color;
+        font-family: $secondary-font;
+        font-weight: 100;
+        font-size: 20px;
+        padding: 10px 0 10px 15px;
+        border-bottom: solid 1px rgb(240, 240, 240);
+    }
+    
+}
+   
+
+$purple: #7A303F;
+$dark-purple: darken(#7A303F,20%);
+$gray: #3F3F3F;
+$red: #fa3400;
+$green: #046746;
+$lightgreen: #f1f9f6;
+$bluegray: #213B4D;
+$greengray: #54635e;
+$i: !important;

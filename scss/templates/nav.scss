@@ -1,0 +1,55 @@
+@import '../setup/variables';
+@import '../setup/breakpoints';
+
+
+.header {
+    &__logo{
+        max-width: 250px;
+        position: absolute;
+        width:100%;
+        left: 0;
+        transition: opacity 500ms ease-in-out;
+
+    }
+    &__info {
+        font-family: $primary-font;
+        font-size: 16px;
+        color: $primary-color;
+        display: block;
+        transition: opacity 500ms ease-in-out;
+
+    }
+    &__description {
+        position: absolute !important;
+        right: 30%;
+        top: 30px;
+        opacity: 0;
+        transition: opacity 500ms ease-in-out;
+        @media #{$uptolaptop}{
+            display: none;
+        }
+    }
+    &__phone {
+        position: absolute;
+        right: 5%;
+        top: 30px;
+        opacity: 0;
+        transition: opacity 500ms ease-in-out;
+        @media #{$uptolaptop}{
+            display: none;
+        }
+
+        &:hover {
+            color:$tertiary-color;
+        }
+    }
+
+    a {
+        @extend .header__info;
+        &:hover {
+            color:$tertiary-color;
+        }
+    }
+
+}
+

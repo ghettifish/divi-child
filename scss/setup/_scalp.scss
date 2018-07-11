@@ -1,0 +1,20 @@
+$base-unit: 1rem;
+$ratio: 1.2;
+
+@function scalp($unit){
+    $i: 0;
+    $n: 0;
+    
+    @for $i from 0 to $unit {
+        @if $unit > 1 {
+            $n: $base-unit * $ratio;
+            $i: $i + 1;
+            
+        } @else {
+            $n: $base-unit;
+        }
+        $base-unit: $n;
+    }
+    @return $n;
+   
+}

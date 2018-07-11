@@ -1,0 +1,24 @@
+/*
+Theme Name: Avada Child
+Description: Child theme for Avada theme
+Author: ThemeFusion
+Author URI: https://theme-fusion.com
+Template: Avada
+Version: 1.0.0
+Text Domain:  Avada
+*/
+
+/*Setup*/
+
+ @import 'setup/variables';
+ @import 'setup/scalp';
+ @import 'setup/breakpoints';
+ @import 'setup/divi-fixes';
+ @import 'setup/global';
+ @import 'setup/buttons';
+
+
+ /*Template Components*/
+
+ @import 'templates/nav';
+ @import 'templates/sections';

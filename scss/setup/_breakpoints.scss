@@ -1,0 +1,47 @@
+$screen: " screen and ";
+$mobile: "screen and (min-width: 320px) and (max-width: 374px)";
+$iphone: " screen and (min-width: 375px) and (max-width: 424px)";
+$uptoiphone: "screen and (min-width: 320px) and (max-width: 425px)";
+$tablet: "screen and (min-width: 425px) and (max-width: 767px)";
+$uptotablet: "screen and (min-width: 320px) and (max-width: 768px)";
+$laptop: "screen and (min-width: 801px) and (max-width: 1023px)";
+$uptolaptop: "screen and (min-width: 320px) and (max-width: 980px)";
+$desktop: "screen and (min-width: 1024px) and (max-width: 1439px)";
+$desktophd: "screen and (min-width: 1440px)";
+
+
+
+@media #{$mobile} {
+    :root {
+        font-size: 10px !important;
+    }
+}
+
+@media #{$iphone} {
+    :root {
+        font-size: 10px !important;
+    }
+}
+
+@media #{$tablet} {
+    :root {
+        font-size: 11px !important;
+    }
+}
+
+@media #{$laptop} {
+    :root {
+        font-size: 14px !important;
+    }
+}
+
+@media #{$desktop}  {
+    :root {
+        font-size: 15px !important;
+    }
+}
+@media #{$desktophd}  {
+    :root {
+        font-size: 20px !important;
+    }
+}
